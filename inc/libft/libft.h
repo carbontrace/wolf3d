@@ -6,7 +6,7 @@
 /*   By: cterrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/22 11:35:02 by cterrill          #+#    #+#             */
-/*   Updated: 2017/05/30 09:10:47 by cterrill         ###   ########.fr       */
+/*   Updated: 2017/10/18 20:11:36 by cterrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,8 +105,8 @@ void				ft_swapchar(char *p1, char *p2);
 int					ft_tablen(char **tab);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
-double			ft_lerp(double first, double second, double p);
-double			ft_ilerp(double val, double first, double second);
-int				ft_lerpi(int first, int second, double p);
+double				ft_lerp(double first, double second, double p);
+double				ft_ilerp(double val, double first, double second);
+int					ft_lerpi(int first, int second, double p);
 
 #endif

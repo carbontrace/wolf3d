@@ -6,7 +6,7 @@
 /*   By: cterrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 19:53:09 by cterrill          #+#    #+#             */
-/*   Updated: 2017/10/18 19:53:10 by cterrill         ###   ########.fr       */
+/*   Updated: 2017/10/18 20:19:36 by cterrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,5 @@ void	texture_load(t_env *e)
 			"gfx/tex_wall_castle2.xpm", &width, &height);
 	e->wall[4] = mlx_xpm_file_to_image(e->mlx,
 			"gfx/tex_wall_castle_door.xpm", &width, &height);
-
 	texture_sprite_load(e);
 }

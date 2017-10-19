@@ -6,13 +6,13 @@
 /*   By: cterrill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 19:53:38 by cterrill          #+#    #+#             */
-/*   Updated: 2017/10/18 19:53:40 by cterrill         ###   ########.fr       */
+/*   Updated: 2017/10/18 20:20:18 by cterrill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/wolf3d.h"
 
-t_coord	*newcoord(double x, double y)
+t_coord		*newcoord(double x, double y)
 {
 	t_coord *coord;
 

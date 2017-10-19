@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   wolf3d.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cterrill <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/10/18 20:33:02 by cterrill          #+#    #+#             */
+/*   Updated: 2017/10/18 20:33:09 by cterrill         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef WOLF3D_H
 # define WOLF3D_H
@@ -57,7 +68,6 @@ typedef struct	s_player
 	t_coord		*pos;
 	t_coord		*dir;
 	t_coord		*plane;
-	int				room;
 }				t_player;
 
 typedef struct	s_img
@@ -84,14 +94,14 @@ typedef struct	s_keyboard
 	int			sright;
 }				t_keyboard;
 
-typedef struct		s_mouse
+typedef struct	s_mouse
 {
 	char		isdown;
 	int			x;
 	int			y;
 	int			lastx;
 	int			lasty;
-}					t_mouse;
+}				t_mouse;
 
 typedef struct	s_hud
 {
@@ -120,7 +130,7 @@ typedef struct	s_env
 	t_hud		hud[HUD_COUNT];
 	t_sprite	sprite[NBSPRITE];
 	t_keyboard	key;
-	t_mouse			mouse;
+	t_mouse		mouse;
 }				t_env;
 
 typedef struct	s_raycast
@@ -192,7 +202,7 @@ typedef struct	s_raysprite
 }				t_raysprite;
 
 void			render_init(t_player *player, t_map *map, int room);
-int 			wolf_init(int room, char *file);
+int				wolf_init(int room, char *file);
 int				key_press_hook(int keycode, t_env *e);
 int				key_release_hook(int keycode, t_env *e);
 

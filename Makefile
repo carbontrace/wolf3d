@@ -27,8 +27,7 @@ SRC		=	main.c \
 			draw.c \
 			texture.c \
 			keyboard.c \
-			hook.c \
-			mouse.c \
+			hook.c
 
 OBJ		= 	$(addprefix $(OBJDIR)/,$(SRC:.c=.o))
 
