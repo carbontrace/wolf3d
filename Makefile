@@ -24,7 +24,6 @@ SRC		=	main.c \
 			raycast.c \
 			raydraw.c \
 			raysprite.c \
-			setup_mlx.c \
 			draw.c \
 			texture.c \
 			keyboard.c \
